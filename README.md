@@ -1,136 +1,58 @@
-# 🦇🦇 BatTheme
-<p align="center">
-  <a href="https://github.com/mastersam07/smarty" target="_blank">
-    <img src="./ss/batman.gif" alt="Bat Theme" width="200">
-  </a>
-</p>
+# Home Automation Control System
 
-[![CI](https://github.com/Mastersam07/smarty/actions/workflows/ci.yaml/badge.svg)](https://github.com/Mastersam07/smarty/actions/workflows/ci.yaml)
-[![codecov](https://codecov.io/github/Mastersam07/smarty/branch/dev/graph/badge.svg?token=dcSZVkPLxf)](https://codecov.io/github/Mastersam07/smarty)
+## Description
+The **Home Automation Control System** is a comprehensive mobile application designed to allow users to manage and monitor various smart home devices. Built with Flutter, this system enhances convenience, security, and energy efficiency in the user's home environment.
 
-A repo showcasing how to work with theme extensions in flutter. For the code guide to the writeup <a href="https://github.com/mastersam07">Dressing your flutter widget with theme extension</a> and also the talk <a href="https://docs.google.com/presentation/d/1FWXvKfj6RJoSvFbdGjpX1EkOZi8zscnPwokh8R8Q3Us/edit?usp=sharing">Dressing your flutter widget with theme extension</a> you could check <a href="https://github.com/mastersam07/bat_theme">here</a>.
+## Key Features
 
-This library is an implementation of the design system available here: https://www.figma.com/file/igCMUoRobPORn168iE513B/Smart-hom-app?node-id=505-406
+- **User Authentication and Profile Management:** Secure login with role-based access control.
+- **Device Control:** Manage smart devices such as lights, thermostats, security cameras, and door locks.
+- **Real-time Monitoring:** View live feeds from security cameras and receive status updates from sensors.
+- **Notifications and Alerts:** Receive push notifications for critical events like security breaches or smoke detection.
+- **Energy Management:** Monitor energy consumption and get recommendations to optimize usage.
+- **Voice Control Integration:** Compatible with Amazon Alexa and Google Assistant for voice command functionality.
+- **Mobile Access:** Accessible via a responsive mobile app on both Android and iOS.
 
-Star⭐ the repo if you like what you see😉.
+## Tech Stack and Integrations
 
-## Getting Started
+### Mobile App Development
+- **Frontend:** Flutter for a dynamic and responsive user interface.
+- **Backend Integration:** RESTful APIs for seamless communication with backend services.
+- **Authentication:** Firebase for real-time database functionality and secure user authentication.
+- **Real-time Communication:** WebSocket for instant updates and communication between the mobile app and the backend.
 
-* Add the package to your `pubspec.yaml` file:
+## My Contributions
 
-```yaml
-dependencies:
-    bat_theme: any
-```
+### User Interface Development
+- **Flutter Development:** Created a dynamic and responsive mobile app using Flutter, ensuring a consistent user experience across Android and iOS.
+- **Component Design:** Designed and implemented components for device control, real-time monitoring, and user management.
+- **Visual Design:** Used Flutter’s widgets to build an aesthetically pleasing and user-friendly interface.
 
-* Use the `BatCave` widget:
+### Real-time Data Integration
+- **WebSocket Integration:** Enabled real-time communication for immediate status updates of devices and sensors.
 
-```dart
-import 'package:bat_theme/bat_theme.dart';
+### User Authentication
+- **Firebase Integration:** Implemented secure login and user management using Firebase authentication services.
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+## Impact
 
-  @override
-  Widget build(BuildContext context) {
-    return BatCave(
-        home: Homepage(),
-    );
-  }
-}
-```
+- **Enhanced User Experience:** Developed an intuitive and responsive interface, simplifying the management of smart home devices.
+- **Improved User Engagement:** Designed a visually appealing UI, leading to increased user satisfaction and engagement.
+- **Real-time Interaction:** Provided immediate feedback and control through real-time data updates.
+- **Accessibility:** Ensured the app is fully accessible on mobile devices, allowing users to control their home environment from anywhere.
 
-Or you can also use the `BatThemeData` extension:
+## Snapshots
 
-```dart
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+| Light Theme | Dark Theme |
+|-------------|------------|
+| <img src="example/ss/1.png" width="250" height="400"> | <img src="example/ss/dark1.png" width="250" height="400"> |
+| <img src="example/ss/2.png" width="250" height="400"> | <img src="example/ss/dark2.png" width="250" height="400"> |
+| <img src="example/ss/3.png" width="250" height="400"> | <img src="example/ss/dark3.png" width="250" height="400"> |
+| <img src="example/ss/4.png" width="250" height="400"> | <img src="example/ss/dark4.png" width="250" height="400"> |
+| <img src="example/ss/5.png" width="250" height="400"> | <img src="example/ss/dark5.png" width="250" height="400"> |
+| <img src="example/ss/6.png" width="250" height="400"> | <img src="example/ss/dark6.png" width="250" height="400"> |
+| <img src="example/ss/7.png" width="250" height="400"> | <img src="example/ss/dark7.png" width="250" height="400"> |
+| <img src="example/ss/8.png" width="250" height="400"> | <img src="example/ss/dark8.png" width="250" height="400"> |
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        theme: BatThemeData(colors: BatColors.light()),
-        home: Homepage(),
-    );
-  }
-}
-```
+---
 
-Or you can also use the `BatThemeData` light/dark constructors:
-
-```dart
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        theme: BatThemeData.light(),
-        darkTheme: BatThemeData.dark(),
-        home: Homepage(),
-    );
-  }
-}
-```
-
-## Full Usage
-
-You can check the [example](./example) to see this theming system in usage.
-
-## 📸 ScreenShots
-
-<img src="example/ss/smarty_light.png"/>
-
-| Image| Image|
-|------|-------|
-|<img src="example/ss/1.png" width="250" height="400">|<img src="example/ss/2.png" width="250" height="400">|
-|<img src="example/ss/3.png" width="250" height="400">|<img src="example/ss/4.png" width="250" height="400">|
-|<img src="example/ss/5.png" width="250" height="400">|<img src="example/ss/6.png" width="250" height="400">|
-|<img src="example/ss/7.png" width="250" height="400">|<img src="example/ss/8.png" width="250" height="400">|
-|<img src="example/ss/9.png" width="250" height="400">|<img src="example/ss/10.png" width="250" height="400">|
-|<img src="example/ss/11.png" width="250" height="400">|<img src="example/ss/12.png" width="250" height="400">|
-|<img src="example/ss/13.png" width="250" height="400">|<img src="example/ss/14.png" width="250" height="400">|
-
-
-## 🌗 Dark theme
-
-<img src="example/ss/smarty_light.png"/>
-
-| Image| Image|
-|------|-------|
-|<img src="example/ss/dark1.png" width="250" height="400">|<img src="example/ss/dark2.png" width="250" height="400">|
-|<img src="example/ss/dark3.png" width="250" height="400">|<img src="example/ss/dark4.png" width="250" height="400">|
-|<img src="example/ss/dark5.png" width="250" height="400">|<img src="example/ss/dark6.png" width="250" height="400">|
-|<img src="example/ss/dark7.png" width="250" height="400">|<img src="example/ss/dark8.png" width="250" height="400">|
-|<img src="example/ss/dark9.png" width="250" height="400">|<img src="example/ss/dark10.png" width="250" height="400">|
-|<img src="example/ss/dark11.png" width="250" height="400">|<img src="example/ss/dark12.png" width="250" height="400">|
-|<img src="example/ss/dark13.png" width="250" height="400">|<img src="example/ss/dark14.png" width="250" height="400">|
-
-## 🤓 Designer(s)
-**Tosin** [![Twitter Follow](https://img.shields.io/twitter/follow/tohsin_vibes.svg?style=social)](https://twitter.com/tohsin_vibes)
-
-## 🤓 Author(s)
-**Samuel Abada** [![Twitter Follow](https://img.shields.io/twitter/follow/mastersam_.svg?style=social)](https://twitter.com/mastersam_)
-
-
-## Roadmap
-
-Who knows whats next? 
-
-- [ ] Better ways to do it?
-
-## Credits
-
-- [Flutter](https://github.com/flutter/flutter)
-- [Flutter DSFR](https://github.com/Floating-Dartists/flutter_dsfr)
-
-## Contributors
-
-[<img src="https://avatars3.githubusercontent.com/u/31275429?s=460&u=b935d608a06c1604bae1d971e69a731480a27d46&v=4" width="180" />](https://twitter.com/mastersam_)
-#### **Samuel Abada**
-<p>
-<a href="https://twitter.com/mastersam_"><img src="https://github.com/aritraroy/social-icons/blob/master/twitter-icon.png?raw=true" width="60"></a>
-<a href="https://linkedin.com/in/abada-samuel/"><img src="https://github.com/aritraroy/social-icons/blob/master/linkedin-icon.png?raw=true" width="60"></a>
-<a href="https://medium.com/@sammytech"><img src="https://github.com/aritraroy/social-icons/blob/master/medium-icon.png?raw=true" width="60"></a>
-<a href="https://facebook.com/abada.samueloghenero"><img src="https://github.com/aritraroy/social-icons/blob/master/facebook-icon.png?raw=true" width="60"></a>
-</p>

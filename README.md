@@ -15,6 +15,20 @@ The **Home Automation Control System** is a comprehensive mobile application des
 
 ## Tech Stack and Integrations
 
+## Tech Stack Badges
+
+![Flutter](https://img.shields.io/badge/Flutter-3.7.7-blue?logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.0.0-blue?logo=dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-10.4.0-yellow?logo=firebase&logoColor=white)
+![Provider](https://img.shields.io/badge/Provider-6.1.0-blue?logo=flutter&logoColor=white)
+![Riverpod](https://img.shields.io/badge/Riverpod-2.2.0-blue?logo=flutter&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-16.0.0-E434AA?logo=graphql&logoColor=white)
+![Dartz](https://img.shields.io/badge/Dartz-0.10.0-blue?logo=flutter&logoColor=white)
+![GetIt](https://img.shields.io/badge/GetIt-7.2.0-blue?logo=flutter&logoColor=white)
+![Bluetooth](https://img.shields.io/badge/Bluetooth-5.2-blue?logo=bluetooth&logoColor=white)
+![MQTT](https://img.shields.io/badge/MQTT-5.0-blue?logo=java&logoColor=white)
+
+
 ### Mobile App Development
 - **Frontend:** Flutter for a dynamic and responsive user interface.
 - **Backend Integration:** RESTful APIs for seamless communication with backend services.
